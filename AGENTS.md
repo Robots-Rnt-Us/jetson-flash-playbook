@@ -1,43 +1,43 @@
 # Agent instructions — `jetson-flash-playbook`
 
-This repository is intentional **ground truth** for a specific lab stack: **Jetson AGX Orin Developer Kit**, **Ubuntu 22.04 x86_64 host**, **SDK Manager CLI**, example **JetPack 6.x** lines.
+This repo is deliberate **lab ground truth** for **Jetson AGX Orin Developer Kit**, **Ubuntu 22.04 x86_64 host**, **JetPack 6.x** examples, plus **SDK Manager CLI** sequencing.
 
-When assisting a human who opened this workspace (or pasted its paths), treat these Markdown files **as constraints on what to advise first**.
-
----
-
-## Read order before improvising hardware steps
-
-1. [`docs/START_HERE.md`](docs/START_HERE.md) — **phased timeline** (host downloads versus Recovery wiring), cabling/power, novice prompts.
-2. [`docs/jetson/troubleshooting.md`](docs/jetson/troubleshooting.md) — **mapped symptoms → fixes** referenced in-session.
-3. [`docs/jetson/faq.md`](docs/jetson/faq.md) — **Automatic vs Manual**, **IPv4**, **Runtime vs Pre-Config**, Install vs Skip.
-4. [`docs/jetson/flash-runbook.md`](docs/jetson/flash-runbook.md) — **long-form command-line/UI** detail when START_HERE omits specifics.
-5. [`docs/jetson/bring-up-journey.md`](docs/jetson/bring-up-journey.md) — **narrative** when morale/debugging loops matter; distill facts back into START_HERE/troubleshooting if new stable patterns emerge.
-
-If the repo is silent on something (carrier board SKU, unreleased JetPack), **defer to NVIDIA’s current Jetson/Linux/SDK Manager docs**—and say you are extrapolating.
+Assume humans opened this workspace (or attached these paths). Prefer cited Markdown over improvised forum posts until NVIDIA contradicts upstream.
 
 ---
 
-## Style and safety constraints
+## Read precedence
 
-- **Do not invent default usernames/passwords** for Jetson Linux. Credential behavior depends on **Runtime OEM** versus **Pre-Config** selections.
-- Prefer **explicit `lsusb` VID `0955` checks** and **Manual Setup** wording for virgin boards when FAQs say so—not generic “plug board” hand-waving.
-- Keep downloads off cramped `/home` when the playbook shows `--download-folder` / `--target-image-folder`; avoid undoing `/opt`-style mitigations unless the operator confirms layouts.
-- **Never** propose committing `.env`, API keys, or serial dumps into this repo—remind operators to paste redacted excerpts only.
+1. [`docs/START_HERE.md`](docs/START_HERE.md) — phased timeline (downloads before Recovery cabling).
+2. [`docs/jetson/troubleshooting.md`](docs/jetson/troubleshooting.md) — symptom → fix lookups.
+3. [`docs/jetson/faq.md`](docs/jetson/faq.md) — automatic/manual, IPv4 defaults, OEM Runtime vs Pre-Config, Skip vs Install.
+4. [`docs/jetson/flash-runbook.md`](docs/jetson/flash-runbook.md) — long-form CLI/UI minutiae.
+5. [`docs/jetson/bring-up-journey.md`](docs/jetson/bring-up-journey.md) — pacing + morale; distill stable facts elsewhere.
+
+Skim [`wiki/Home.md`](wiki/Home.md) summary + SVG when users want the GitHub-facing cheat-sheet language.
+
+Silent topic? Admit gap, cite NVIDIA Jetson / SDK docs, propose repo patch.
+
+---
+
+## Safety & style rails
+
+- No invented **default Jetson passwords**—credentials hinge on OEM choices.
+- Insist on **regulated DC power**, **known-good USB‑C/data cable**, and **`lsusb` `0955` checks** whenever Recovery chatter appears.
+- Keep SDK downloads off cramped `/home` when playbook shows `/opt`-style mitigation until operator overrides.
+- Never recommend committing `.env`/tokens/logs wholesale—redaction first.
 - If SDK Manager transcripts conflict with this corpus (versions moved on), prioritize **logged UI text/changelogs**, then reconcile back here via patch proposal.
 
 ---
 
-## When the user asks “what next?”
+## "What next?" triage cheatsheet
 
-Answer by **recovering phase** (`START_HERE` flowchart segments). Example pattern:
-
-| Situation hint | Repo pointer |
-|----------------|--------------|
-| Host still downloading / verifying APT | START_HERE Phase 1 + troubleshooting APT section |
-| Tool requests Recovery / Jetson missing | START_HERE Phase 2 + cabling ID section |
-| Flash finished, SSH refuses | troubleshooting SSH + FAQ Runtime vs Pre-Config |
-| “Success” but skipped flash | troubleshooting “Flash skipped” |
+| Signal | Repo pointer |
+|--------|---------------|
+| Host busy downloading/apt | START_HERE Phase 1 + troubleshooting APT |
+| Waiting on Recovery | START_HERE Phase 2 + cabling table |
+| Flash done, SSH fails | troubleshooting SSH + FAQ OEM section |
+| "Success" but flash skipped summary | troubleshooting "Flash skipped" |
 
 ---
 
@@ -47,6 +47,6 @@ Operational fixes belong in **`docs/jetson/troubleshooting.md`**. Temporal war s
 
 ---
 
-## Humans: wiring your AI assistant
+## Human workflow companion
 
-Canonical operator instructions plus copy-paste preambles: [`docs/meta/agent-and-llm-usage.md`](docs/meta/agent-and-llm-usage.md).
+Teaching humans how to wire assistants lives in [`docs/meta/agent-and-llm-usage.md`](docs/meta/agent-and-llm-usage.md). Wiki skim lives at [`wiki/Home.md`](wiki/Home.md).

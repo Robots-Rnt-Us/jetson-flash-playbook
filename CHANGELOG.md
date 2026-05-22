@@ -2,11 +2,13 @@
 
 All notable documentation revisions should be summarized here.
 
+## 0.5.0 — 2026-05-23
+
+- Added **`wiki/`** mirror for the GitHub Wiki (`Home.md`, `_Sidebar.md`, [`Ninety-second-cheatsheet.md`](wiki/Ninety-second-cheatsheet.md), [`wiki/images/phases-overview.svg`](wiki/images/phases-overview.svg)) plus [`docs/publishing-github-wiki.md`](docs/publishing-github-wiki.md) and [`scripts/sync-github-wiki.sh`](scripts/sync-github-wiki.sh) for maintainers with `.wiki.git` access.
+
 ## 0.4.0 — 2026-05-23
 
-- Added **[AGENTS.md](AGENTS.md)** instructing assistants to treat this playbook as prioritized ground truth (read-order, phased pointers, secrecy rails, version-conflict etiquette).
-- Added **[docs/meta/agent-and-llm-usage.md](docs/meta/agent-and-llm-usage.md)** documenting how operators wire Cursor/Chats/RAG workflows to anchored Markdown snapshots.
-- Linked README + `START_HERE` + CONTRIBUTING matrices to both files; mentioned assistant grounding beside [documentation strategy](docs/meta/documentation-strategy.md) notes.
+- Added **[AGENTS.md](AGENTS.md)** and **[docs/meta/agent-and-llm-usage.md](docs/meta/agent-and-llm-usage.md)** so assistants ingest read-order/policy before improvising NVIDIA forum advice; README/`START_HERE`/`CONTRIBUTING`/documentation-strategy pointers updated accordingly.
 
 ## 0.3.0 — 2026-05-22
 
@@ -16,7 +18,7 @@ All notable documentation revisions should be summarized here.
 
 ## 0.2.0 — 2026-05-22
 
-- Added [docs/jetson/bring-up-journey.md](docs/jetson/bring-up-journey.md), a chronological “whole journey” companion to the distilled runbook/troubleshooting pages.
+- Added [docs/jetson/bring-up-journey.md](docs/jetson/bring-up-journey.md), a chronological "whole journey" companion to the distilled runbook/troubleshooting pages.
 - Added [docs/meta/documentation-strategy.md](docs/meta/documentation-strategy.md) on using Git/GitHub versus wikis, Notion/static sites, and hybrid patterns.
 - Cross-linked README, [flash-runbook.md](docs/jetson/flash-runbook.md), and [troubleshooting.md](docs/jetson/troubleshooting.md) to the narrative for mixed-skill teams.
 
