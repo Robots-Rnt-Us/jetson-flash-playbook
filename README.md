@@ -2,7 +2,9 @@
 
 Operational documentation for flashing **NVIDIA Jetson AGX Orin Developer Kit** (64 GB) using **SDK Manager CLI** with **JetPack 6.x** on an **Ubuntu 22.04** x86 host.
 
-This repo is optimized for mixed-skill teams: use the Quick Path first, drill into guided steps when something fails.
+Start with the [Quick Path](#quick-path) when you only need the recipe. If you are drowning in cryptic SDK Manager errors—or you need to convince a teammate this is normal—read the [**real bring-up journal**](docs/jetson/bring-up-journey.md) next. Unsure whether GitHub vs wiki vs Notion is right for your lab? See [documentation strategy](docs/meta/documentation-strategy.md).
+
+This repo is optimized for mixed-skill teams.
 
 ---
 
@@ -12,6 +14,8 @@ This repo is optimized for mixed-skill teams: use the Quick Path first, drill in
 |--------|----------------|
 | Operator (done this before) | [Quick Path](#quick-path) → [Flash runbook](docs/jetson/flash-runbook.md#quick-path) |
 | First-time flasher | [Guided Path](docs/jetson/flash-runbook.md#guided-path) |
+| “Is this supposed to be this hard?” | [Bring-up journey (chronological)](docs/jetson/bring-up-journey.md) |
+| Picking tooling (Git vs wiki docs) | [Documentation strategy](docs/meta/documentation-strategy.md) |
 | Debugging | [Troubleshooting](docs/jetson/troubleshooting.md) |
 
 ---
@@ -58,6 +62,8 @@ Suggested interactive choices:
 
 | Path | Contents |
 |------|----------|
+| [docs/jetson/bring-up-journey.md](docs/jetson/bring-up-journey.md) | Chronological narrative: dead ends → what finally worked |
+| [docs/meta/documentation-strategy.md](docs/meta/documentation-strategy.md) | GitHub repo vs wiki / Notion / static sites |
 | [docs/jetson/flash-runbook.md](docs/jetson/flash-runbook.md) | Step-by-step flash flow and prompt decisions |
 | [docs/jetson/troubleshooting.md](docs/jetson/troubleshooting.md) | Symptom → cause → fix matrix |
 | [docs/jetson/post-flash-checklist.md](docs/jetson/post-flash-checklist.md) | Sanity checks after power-on |
@@ -78,6 +84,12 @@ List org repos:
 ```bash
 gh repo list Robots-Rnt-Us --limit 20
 ```
+
+---
+
+## Contributing
+
+See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for reviewer expectations, the PR checklist, and mirroring only a cheat sheet onto the GitHub organization wiki without duplicating narrative history.
 
 ---
 

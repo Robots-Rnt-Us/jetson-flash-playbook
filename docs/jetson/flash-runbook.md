@@ -2,7 +2,7 @@
 
 Scope: **Ubuntu 22.04 x86_64 host**, **JetPack 6.x** (example: `6.2.2`), **Jetson AGX Orin Developer Kit (64 GB)**. Adjust `--version` and Manual Setup target name if your SKU differs.
 
-See also: [troubleshooting.md](troubleshooting.md), [faq.md](faq.md).
+See also: [bring-up-journey.md](bring-up-journey.md) (chronological “how we finally got there”), [troubleshooting.md](troubleshooting.md), [faq.md](faq.md).
 
 ---
 
