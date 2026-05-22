@@ -2,6 +2,10 @@
 
 All notable documentation revisions should be summarized here.
 
+## 0.1.1 — 2026-05-22
+
+- Added [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) and README link for reviewer/wiki workflow.
+
 ## 0.1.0 — 2026-05-22
 
 - Initial playbook: README quick path,

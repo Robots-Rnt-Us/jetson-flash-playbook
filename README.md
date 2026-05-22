@@ -81,6 +81,12 @@ gh repo list Robots-Rnt-Us --limit 20
 
 ---
 
+## Contributing
+
+See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for reviewer expectations and optional org wiki mirroring.
+
+---
+
 ## Naming & versioning
 
 Maintainers should update README and runbook headers whenever **JetPack**, **Jetson Linux**, or **SDK Manager** versions change materially. Older boards or carrier boards may require different `--target` or manual setup lines—call that out when you diverge.
