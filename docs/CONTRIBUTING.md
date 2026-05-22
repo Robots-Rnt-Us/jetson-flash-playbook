@@ -11,9 +11,10 @@ Detailed rationale: [documentation strategy](meta/documentation-strategy.md).
 
 | Kind of change | File |
 |----------------|------|
+| First-time phased guide + cabling/cheat refresher | [docs/START_HERE.md](START_HERE.md) |
 | New failure mode discovered | Extend [docs/jetson/troubleshooting.md](jetson/troubleshooting.md) |
 | Emotional / timeline context | Extend [docs/jetson/bring-up-journey.md](jetson/bring-up-journey.md) THEN distill into troubleshooting |
-| High-level playbook steps | [docs/jetson/flash-runbook.md](jetson/flash-runbook.md), [README](../README.md) |
+| Exhaustive scripted steps after START_HERE drift | [docs/jetson/flash-runbook.md](jetson/flash-runbook.md), [README](../README.md) |
 
 ## Workflow
 

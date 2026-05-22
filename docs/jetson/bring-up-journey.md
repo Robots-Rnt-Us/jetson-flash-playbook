@@ -2,7 +2,7 @@
 
 This page records an **actual multi-hour bring-up** on an Ubuntu 22.04 x86 host flashing a **Jetson AGX Orin (64 GB Developer Kit)** with **JetPack 6.2.2** via **SDK Manager CLI 2.4.x**. It is written so the next person recognizes *patterns* when their screen does not match glossy quick-start guides.
 
-Operational checklists live in [flash-runbook.md](flash-runbook.md) and [troubleshooting.md](troubleshooting.md). This file is the **story + sequence of dead ends and fixes**.
+Operational checklists live in [START_HERE.md](../START_HERE.md), [flash-runbook.md](flash-runbook.md), and [troubleshooting.md](troubleshooting.md). This file is the **story + sequence of dead ends and fixes**.
 
 ---
 
