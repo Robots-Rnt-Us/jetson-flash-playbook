@@ -2,6 +2,12 @@
 
 All notable documentation revisions should be summarized here.
 
+## 0.3.0 — 2026-05-22
+
+- Added [docs/START_HERE.md](docs/START_HERE.md): beginner-first timeline (downloads on host versus Recovery wiring), physical kit checklist, NVMe caution, Ubuntu Wi‑Fi/Chromium/SSH helpers, condensed flowchart aligned with externally reviewed guidance plus lab reality.
+- Simplified README to route through `START_HERE.md` plus a compact phase diagram teaser.
+- Pointed contributing / flash-runbook / FAQ / troubleshooting / journey pages at the new onboarding spine.
+
 ## 0.2.0 — 2026-05-22
 
 - Added [docs/jetson/bring-up-journey.md](docs/jetson/bring-up-journey.md), a chronological “whole journey” companion to the distilled runbook/troubleshooting pages.

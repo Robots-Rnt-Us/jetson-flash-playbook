@@ -1,5 +1,7 @@
 # FAQ — Jetson flashing with SDK Manager
 
+If you arrived before reading the phased guide, skim [START_HERE.md](../START_HERE.md) once—FAQ entries below assume those ordering concepts.
+
 ---
 
 ## Automatic vs Manual setup?

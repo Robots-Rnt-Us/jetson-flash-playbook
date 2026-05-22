@@ -1,6 +1,8 @@
 # Troubleshooting matrix — Jetson flash (SDK Manager / Ubuntu host)
 
-This file is deliberately dry. When you want **context and sequencing** (“we already tried that—what next?”), read [bring-up-journey.md](bring-up-journey.md) first.
+Prefer the phased narrative in [`START_HERE.md`](../START_HERE.md) unless you jumped here chasing a symptom.
+
+This file stays deliberately terse. Need pacing plus war stories first? Peek at [bring-up-journey.md](bring-up-journey.md).
 
 Convention: Run commands on **host PC** unless stated otherwise.
 

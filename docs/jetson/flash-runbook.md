@@ -1,5 +1,7 @@
 # Jetson AGX Orin — Flash runbook (SDK Manager CLI)
 
+**New readers:** begin with **[START_HERE.md](../START_HERE.md)** (phased timeline: host downloads versus when to wire Recovery).
+
 Scope: **Ubuntu 22.04 x86_64 host**, **JetPack 6.x** (example: `6.2.2`), **Jetson AGX Orin Developer Kit (64 GB)**. Adjust `--version` and Manual Setup target name if your SKU differs.
 
 See also: [bring-up-journey.md](bring-up-journey.md) (chronological “how we finally got there”), [troubleshooting.md](troubleshooting.md), [faq.md](faq.md).
