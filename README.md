@@ -4,6 +4,17 @@ Operational docs for **Jetson AGX Orin Developer Kit** + **Ubuntu 22.04 x86_64 f
 
 ---
 
+## Using this repo with AI assistants / LLMs
+
+This playbook is deliberately written so assistants can treat it like **indexed ground truth** before improvising unreliable Jetson steps.
+
+- Repo-level agent policy: **`AGENTS.md`** (read order + safety rails).
+- Human wiring guide (Cursor, uploads, RAG): **[`docs/meta/agent-and-llm-usage.md`](docs/meta/agent-and-llm-usage.md)**.
+
+Open the Markdown files in **this clone** alongside your IDE chat—or attach/upload them hosted bots—so guidance stays anchored to validated lab procedures rather than miscellaneous web search results.
+
+---
+
 ## New here? Start in one place
 
 1. Open **[docs/START_HERE.md](docs/START_HERE.md)** — phased timeline, checklist, wiring notes, NVMe reminder, Wi‑Fi/Chromium/SSH snippets, embedded **flowchart**.
@@ -24,6 +35,8 @@ flowchart LR
 
 | Doc | Audience |
 |-----|----------|
+| [`AGENTS.md`](AGENTS.md) | LLM/agent policy: citation order before guessing Jetson/SDK Manager flows |
+| [docs/meta/agent-and-llm-usage.md](docs/meta/agent-and-llm-usage.md) | Humans connecting Cursor/Chats/RAG setups to grounded Markdown |
 | [docs/START_HERE.md](docs/START_HERE.md) | First-time flashes; wants order-of-operations clarity |
 | [docs/jetson/flash-runbook.md](docs/jetson/flash-runbook.md) | Exhaustive scripted CLI / UI choices |
 | [docs/jetson/troubleshooting.md](docs/jetson/troubleshooting.md) | Error symbology ⇢ mitigations matrix |

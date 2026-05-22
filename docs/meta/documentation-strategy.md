@@ -32,6 +32,8 @@ Most robotics labs end up with **two layers**: authoritative Git-backed text **a
 
 **Best when** Ops runbooks influence hardware safety, audit trails matter, or the same Markdown should feed static site generation later.
 
+Companion note: this repo doubles as **grounding corpus** for assistants—see **`AGENTS.md`** (machine-oriented) plus [`agent-and-llm-usage.md`](agent-and-llm-usage.md) (human wiring).
+
 ---
 
 ## Option B — GitHub (or GitLab) wiki

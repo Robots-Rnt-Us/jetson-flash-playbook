@@ -2,6 +2,12 @@
 
 All notable documentation revisions should be summarized here.
 
+## 0.4.0 — 2026-05-23
+
+- Added **[AGENTS.md](AGENTS.md)** instructing assistants to treat this playbook as prioritized ground truth (read-order, phased pointers, secrecy rails, version-conflict etiquette).
+- Added **[docs/meta/agent-and-llm-usage.md](docs/meta/agent-and-llm-usage.md)** documenting how operators wire Cursor/Chats/RAG workflows to anchored Markdown snapshots.
+- Linked README + `START_HERE` + CONTRIBUTING matrices to both files; mentioned assistant grounding beside [documentation strategy](docs/meta/documentation-strategy.md) notes.
+
 ## 0.3.0 — 2026-05-22
 
 - Added [docs/START_HERE.md](docs/START_HERE.md): beginner-first timeline (downloads on host versus Recovery wiring), physical kit checklist, NVMe caution, Ubuntu Wi‑Fi/Chromium/SSH helpers, condensed flowchart aligned with externally reviewed guidance plus lab reality.
