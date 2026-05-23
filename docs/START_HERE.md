@@ -6,6 +6,9 @@ Older deep dives remain linked at the bottom; this file is meant to replace “o
 
 When you drive this workflow with Cursor / VS Code assistants / uploaded chat corpora, start from **[AGENTS.md](../AGENTS.md)** (policy) plus **[Agent + LLM usage notes](meta/agent-and-llm-usage.md)** so models **read Markdown here before hallucinating NVIDIA forum hearsay.**
 
+Prefer a short GitHub-hosted skim with the phase illustration? **[Open the playbook wiki →](https://github.com/Robots-Rnt-Us/jetson-flash-playbook/wiki)** (synced from [`wiki/`](../wiki/)).
+
+
 ---
 
 ## Flowchart — what happens in order

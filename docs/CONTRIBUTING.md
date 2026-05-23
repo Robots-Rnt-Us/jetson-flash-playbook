@@ -3,15 +3,16 @@
 ## Canonical vs casual notes
 
 - **Canonical**: Markdown in this repo, reviewed via pull request (`main` stays deployable/teachable).
-- **Casual grease**: Allowed on the GitHub organization wiki **only if** each page starts with “Source of truth: `jetson-flash-playbook` @ commit …” linking a tag or permalink.
+- **Casual grease**: Allowed on the GitHub organization wiki **only if** each page starts with "Source of truth: `jetson-flash-playbook` @ commit …" linking a tag or permalink.
 
-Detailed rationale: [documentation strategy](meta/documentation-strategy.md).
+Detailed rationale: [documentation strategy](meta/documentation-strategy.md). Practical wiki syncing: [`publishing-github-wiki.md`](publishing-github-wiki.md).
 
 ## Where to edit
 
 | Kind of change | File |
 |----------------|------|
 | Agent / Copilot grounding policy tweaks | [AGENTS.md](../AGENTS.md), [meta/agent-and-llm-usage.md](meta/agent-and-llm-usage.md) |
+| GitHub Wiki mirror / cheatsheet infographic | Edit files under [`../wiki/`](../wiki/) then [`scripts/sync-github-wiki.sh`](../scripts/sync-github-wiki.sh) *(or paste manually)* per [publishing guide](publishing-github-wiki.md) |
 | First-time phased guide + cabling/cheat refresher | [docs/START_HERE.md](START_HERE.md) |
 | New failure mode discovered | Extend [docs/jetson/troubleshooting.md](jetson/troubleshooting.md) |
 | Emotional / timeline context | Extend [docs/jetson/bring-up-journey.md](jetson/bring-up-journey.md) THEN distill into troubleshooting |

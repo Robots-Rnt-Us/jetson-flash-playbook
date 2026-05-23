@@ -4,10 +4,10 @@ Humans cloned [Robots-Rnt-Us/jetson-flash-playbook](https://github.com/Robots-Rn
 
 ---
 
-## What “grounded” means here
+## What "grounded" means here
 
 1. Answers should **cite playbook Markdown** (`docs/START_HERE.md`, `docs/jetson/troubleshooting.md`, …) before inventing bespoke procedures.
-2. When NVIDIA’s UI or release notes contradict this corpus, assistants must **state the conflict** explicitly and prefer official NVIDIA docs for authoritative deltas—then help you patch this repo afterward.
+2. When NVIDIA's UI or release notes contradict this corpus, assistants must **state the conflict** explicitly and prefer official NVIDIA docs for authoritative deltas—then help you patch this repo afterward.
 
 ---
 
@@ -19,7 +19,7 @@ Best practice:
 
 1. **Open this repository folder** as the workspace root (or add it to a multi-root workspace).
 2. Keep [`AGENTS.md`](../../AGENTS.md) reachable; many agent flows auto-index workspace roots.
-3. Optional: duplicate the short “read ordering” bullets into `.cursor/rules` if your robotics program mandates uniform behavior across contributors.
+3. Optional: duplicate the short "read ordering" bullets into `.cursor/rules` if your robotics program mandates uniform behavior across contributors.
 4. When asking questions, prepend context similar to:
 
    ```
@@ -36,19 +36,23 @@ Agents with code search / file grounding use local Markdown instead of improvise
 
 Minimal upload bundle:
 
-- [`AGENTS.md`](../../AGENTS.md)
-- [`START_HERE.md`](../START_HERE.md)
-- [`../jetson/troubleshooting.md`](../jetson/troubleshooting.md)
-- [`../jetson/faq.md`](../jetson/faq.md)
+| Priority | Paths |
+|---------|-------|
+| P0 policy | [`AGENTS.md`](../../AGENTS.md) |
+| Ordering | [`START_HERE.md`](../START_HERE.md) |
+| Matrix | [`../jetson/troubleshooting.md`](../jetson/troubleshooting.md) |
+| Choices | [`../jetson/faq.md`](../jetson/faq.md) |
+| Cheat sheet vibes | [`../../wiki/Home.md`](../../wiki/Home.md) |
 
 Add [`../jetson/flash-runbook.md`](../jetson/flash-runbook.md) when you need verbatim CLI scaffolding.
 
-Starter instruction snippet:
+Starter prompt scaffold:
 
 ```
-Use the attached playbook Markdown as the primary source for ordering/steps/fixes for this Jetson flashing session.
-Where the playbook is silent, cite NVIDIA Jetson/Linux/SDK Manager documentation and label speculative steps.
-Never assume Jetson default passwords; credentials depend on OEM Runtime vs Pre-Config flow.
+You are grounded on Robots-Rnt-Us jetson-flash-playbook Markdown.
+Honor AGENTS.md read order before inventing Jetson steps.
+Cite filenames when advising; escalate to NVIDIA if repo silent.
+Never assume SSH usernames/passwords unless operator states them explicitly.
 ```
 
 ### C. Retrieval / internal RAG pipelines
@@ -61,6 +65,17 @@ Treat each Markdown path as chunked ground truth.
 ### D. Automation / scripted agents
 
 Even with perfect grounding, flashing remains **hardware-in-the-loop**. Agents should propose validated commands (`START_HERE.md`, [`flash-runbook.md`](../jetson/flash-runbook.md)); humans confirm before pressing enter on destructive host actions.
+
+---
+
+## Wiki vs repo
+
+| Git canonical docs (`docs/**`) | GitHub Wiki mirror synced from [`wiki/`](../../wiki/) |
+| --- | --- |
+| Reviewed Markdown + changelog | Cheat-sheet wording + **`images/phases-overview.svg`** |
+| PR workflow | Automated via [`scripts/sync-github-wiki.sh`](../../scripts/sync-github-wiki.sh) |
+
+If wiki copy diverges aesthetically but conflicts materially with Markdown, fix git first — wiki is billboard, repo is appellate court.
 
 ---
 

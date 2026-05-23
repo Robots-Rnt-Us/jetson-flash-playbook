@@ -2,6 +2,19 @@
 
 Operational docs for **Jetson AGX Orin Developer Kit** + **Ubuntu 22.04 x86_64 flashing PC** using **JetPack 6.x** and **SDK Manager**.
 
+Need the quick GitHub-hosted landing page plus printable bench flyer material? Browse **[the playbook wiki →](https://github.com/Robots-Rnt-Us/jetson-flash-playbook/wiki)**. The synced mirror—including `wiki/images/phases-overview.svg`—lives beside this README in **[`wiki/`](wiki/)**; publish edits with **`scripts/sync-github-wiki.sh`** after reading **`docs/publishing-github-wiki.md`**.
+
+---
+
+## Using this repo with AI assistants / LLMs
+
+This playbook is deliberately written so assistants can treat it like **indexed ground truth** before improvising unreliable Jetson steps.
+
+- Repo-level agent policy: **`AGENTS.md`** (read order + safety rails).
+- Human wiring guide (Cursor, uploads, RAG): **[`docs/meta/agent-and-llm-usage.md`](docs/meta/agent-and-llm-usage.md)**.
+
+Open the Markdown files in **this clone** alongside your IDE chat—or attach/upload them hosted bots—so guidance stays anchored to validated lab procedures rather than miscellaneous web search results.
+
 ---
 
 ## Using this repo with AI assistants / LLMs
@@ -43,6 +56,8 @@ flowchart LR
 | [docs/jetson/faq.md](docs/jetson/faq.md) | Instant answers Automatic/Manual, Runtime/pre-config … |
 | [docs/jetson/post-flash-checklist.md](docs/jetson/post-flash-checklist.md) | Post-power validation |
 | [docs/meta/documentation-strategy.md](docs/meta/documentation-strategy.md) | Why Git-first + wiki mirroring guideline |
+| [docs/publishing-github-wiki.md](docs/publishing-github-wiki.md) | Maintainer guide for syncing `wiki/` → GitHub wiki |
+| [wiki/](wiki/) | Cheat-sheet Markdown + `images/phases-overview.svg` infographic |
 | [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) | Maintainer workflow + changelog rules |
 
 JetPack **6.2.2**, SDK Manager **2.4.x** strings appear as examples — adjust per release cadence and capture notes in CHANGELOG whenever NVIDIA renames dialogs.

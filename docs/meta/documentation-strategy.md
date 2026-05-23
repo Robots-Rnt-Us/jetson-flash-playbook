@@ -46,7 +46,7 @@ Companion note: this repo doubles as **grounding corpus** for assistants—see *
 
 - Weaker structured review; history is thinner than meaningful Git archaeology.
 
-**Pattern:** Keep **canonical procedures** in the repo; use wiki for **ephemeral lab tips** with a prominent link back to pinned commit or release tag.
+**Pattern:** Keep **canonical procedures** in the repo (`docs/**/*.md`). Mirror a **thin cheat sheet + infographic** inside the tracked [`wiki/`](../../wiki) directory, publish it via [`scripts/sync-github-wiki.sh`](../../scripts/sync-github-wiki.sh) once the `.wiki.git` remote is exposed, **or** manually paste Markdown if your org forbids wiki git access. Glossy Wikis entice skimmers—Git remains appellate court.
 
 ---
 
