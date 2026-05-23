@@ -4,6 +4,8 @@ Use this page if you want the **timeline** of a real NVIDIA SDK Manager install:
 
 Older deep dives remain linked at the bottom; this file is meant to replace “open five tabs and guess the order.”
 
+When you drive this workflow with Cursor / VS Code assistants / uploaded chat corpora, start from **[AGENTS.md](../AGENTS.md)** (policy) plus **[Agent + LLM usage notes](meta/agent-and-llm-usage.md)** so models **read Markdown here before hallucinating NVIDIA forum hearsay.**
+
 ---
 
 ## Flowchart — what happens in order

@@ -11,6 +11,7 @@ Detailed rationale: [documentation strategy](meta/documentation-strategy.md).
 
 | Kind of change | File |
 |----------------|------|
+| Agent / Copilot grounding policy tweaks | [AGENTS.md](../AGENTS.md), [meta/agent-and-llm-usage.md](meta/agent-and-llm-usage.md) |
 | First-time phased guide + cabling/cheat refresher | [docs/START_HERE.md](START_HERE.md) |
 | New failure mode discovered | Extend [docs/jetson/troubleshooting.md](jetson/troubleshooting.md) |
 | Emotional / timeline context | Extend [docs/jetson/bring-up-journey.md](jetson/bring-up-journey.md) THEN distill into troubleshooting |
