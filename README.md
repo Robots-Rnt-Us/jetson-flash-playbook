@@ -1,4 +1,4 @@
-# Jetson flash playbook
+# Jetson flash playbook — Robots-Rnt-Us lab
 
 ![Jetson AGX Orin — SDK Manager Playbook: 3-phase workflow](docs/assets/phases-overview-banner.png)
 
