@@ -2,7 +2,7 @@ Welcome to the **Jetson flash playbook cheat-sheet wiki**.
 
 > Canonical sources live in git on `main`; this wiki is intentionally short so students + AI copilots can skim fast. When details disagree, **[the repo Markdown](https://github.com/Robots-Rnt-Us/jetson-flash-playbook/tree/main)** wins.
 
-![Three-phase Jetson flashing overview](./images/phases-overview.svg)
+![Three-phase Jetson flashing overview](./images/phases-overview-banner.png)
 
 ## Read this first
 

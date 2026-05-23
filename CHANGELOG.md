@@ -2,6 +2,12 @@
 
 All notable documentation revisions should be summarized here.
 
+## 0.5.1 — 2026-05-23
+
+- Added hero banner image (`docs/assets/phases-overview-banner.png`) to README and wiki Home.
+- Cleaned up README: removed duplicate AI-assistants section, added wiki callout link, embedded banner.
+- Initialized and deployed GitHub Wiki with Home, Sidebar, cheatsheet, and phase infographic.
+
 ## 0.5.0 — 2026-05-23
 
 - Added **`wiki/`** mirror for the GitHub Wiki (`Home.md`, `_Sidebar.md`, [`Ninety-second-cheatsheet.md`](wiki/Ninety-second-cheatsheet.md), [`wiki/images/phases-overview.svg`](wiki/images/phases-overview.svg)) plus [`docs/publishing-github-wiki.md`](docs/publishing-github-wiki.md) and [`scripts/sync-github-wiki.sh`](scripts/sync-github-wiki.sh) for maintainers with `.wiki.git` access.
